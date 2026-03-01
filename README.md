@@ -68,4 +68,4 @@ The **Inventory Management System** is a Python-based application that helps man
 This system provides an easy-to-use solution for managing inventory efficiently, ensuring stock levels are maintained and properly recorded.
 
 
-(Open Source Project for Hacktoberfest2024)
+
