@@ -42,9 +42,35 @@ def delete_item():
     item_name = input("Enter the item name to delete: ").strip()
     if item_name in inventory:
         del inventory[item_name]
-        print(f"{item_name} removed from the inventory.")
+        print(f"{item_name} deleted from the inventory.")
     else:
         print(f"{item_name} not found in the inventory.")
+# Sell item from inventory
+def sell_item():
+    item_name = input("Enter the item name to sell: ").strip()
+
+    if item_name not in inventory:
+        print(f"{item_name} not found in inventory.")
+        return
+
+    try:
+        quantity = int(input("Enter quantity to sell: "))
+    except ValueError:
+        print("Invalid quantity.")
+        return
+
+    if quantity > inventory[item_name]['quantity']:
+        print("Not enough stock available.")
+        return
+
+    # reduce stock
+    inventory[item_name]['quantity'] -= quantity
+
+    # calculate bill
+    total_price = quantity * inventory[item_name]['price']
+
+    print(f"Sold {quantity} units of {item_name}")
+    print(f"Total Bill: ${total_price:.2f}")
 
 # View all items in the inventory with total value per item
 def view_inventory():
@@ -120,16 +146,18 @@ def main():
         elif choice == '3':
             delete_item()
         elif choice == '4':
-            view_inventory()
+            sell_item()
         elif choice == '5':
-            search_item()
+            view_inventory()
         elif choice == '6':
-            restock_alert()
+            search_item()
         elif choice == '7':
-            calculate_total_value()
+            restock_alert()
         elif choice == '8':
-            export_to_csv()
+            calculate_total_value()
         elif choice == '9':
+            export_to_csv()
+        elif choice == '10':
             print("Exiting the system.")
             break
         else:
