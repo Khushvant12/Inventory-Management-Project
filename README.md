@@ -12,11 +12,12 @@ The **Inventory Management System** is a Python-based application that helps man
 1. **Add Items** – Insert new items into the inventory.
 2. **Update Items** – Modify existing item details.
 3. **Delete Items** – Remove items from inventory.
-4. **View Inventory** – Display all items with quantities, prices, and total values.
-5. **Search for Items** – Find specific items in the inventory.
-6. **Restock Alerts** – Notify users when item quantities fall below a defined threshold.
-7. **Calculate Total Inventory Value** – Compute the overall worth of stock.
-8. **Export to CSV** – Save inventory records to a CSV file.
+4. **Sell Items** – Sell products and automatically reduce inventory quantity while generating a bill.
+5. **View Inventory** – Display all items with quantities, prices, and total values.
+6. **Search for Items** – Find specific items in the inventory.
+7. **Restock Alerts** – Notify users when item quantities fall below a defined threshold.
+8. **Calculate Total Inventory Value** – Compute the overall worth of stock.
+9. **Export to CSV** – Save inventory records to a CSV file.
 
 ## Usage Guide
 
@@ -67,7 +68,7 @@ The **Inventory Management System** is a Python-based application that helps man
    python inventory.py
    ```
 3. Follow the menu prompts to perform inventory operations.
-4. Exit the application by selecting option `9`.
+4. Exit the application by selecting option `10`.
 
 ## Conclusion
 This system provides an easy-to-use solution for managing inventory efficiently, ensuring stock levels are maintained and properly recorded.
