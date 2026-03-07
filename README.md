@@ -32,23 +32,28 @@ The **Inventory Management System** is a Python-based application that helps man
 ### 3. **Deleting an Item**
 - Users enter the item name to remove it from inventory.
 - The system verifies whether the item exists before deletion.
+### 4  **sell an Item**
+- Users can sell items directly from the inventory.
+- The system asks for: 1.Item name ,2.Quantity to sell.
+- If sufficient stock is available: 1.The quantity is reduced automatically ,2.The system calculates and displays the total bill.
+- If the stock is insufficient, a warning message is displayed.
 
-### 4. **Viewing Inventory**
+### 5. **Viewing Inventory**
 - Displays all stored items, their quantities, unit prices, and total worth.
 - If inventory is empty, a notification is displayed.
 
-### 5. **Searching for an Item**
+### 6. **Searching for an Item**
 - Allows users to find an item by name and view its details.
 - If the item is not found, a notification is provided.
 
-### 6. **Restock Alerts**
+### 7. **Restock Alerts**
 - Items with a quantity less than or equal to 5 are flagged.
 - A list of such items is displayed.
 
-### 7. **Calculating Total Inventory Value**
+### 8. **Calculating Total Inventory Value**
 - Computes and displays the total monetary value of all stored items.
 
-### 8. **Exporting Inventory to CSV**
+### 9. **Exporting Inventory to CSV**
 - Saves inventory records to a CSV file with item name, quantity, price per unit, and total amount.
 - If the inventory is empty, an appropriate message is displayed.
 
